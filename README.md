@@ -1,14 +1,31 @@
+# ranker-comparator
+
+
 ## Table of Contents
 
+- [Requirements & Description](#Requirements & Description)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
 
 
-## Installation
+## Requirements & Description
 
-In order to run this project the basic devtools like *c++ compiler* and *make* need to be installed on the running machine. 
+The goal of this project is to offer a basic set of tools to build and evaluate ranking algorithms. In order to achieve this we have implemented:
+
+- A superclass named *ranker*, which includes some basic utilities to provide a quickstart for the development of new techniques.
+- A top-k retrieval function to retrieve the top-k reated nodes of the network based on a min-hip for high efficiency.
+- An implementation of the Jaccard Similarity Coefficient computation, which exploits the use of unordered sets for high efficiency.
+- A multithreading library, which allows to parallelize the main (like we did) and also any possible ranker.
+- A CSR matrix representation, to allow an efficient handling of the network matrices, also improved through the usage of buffers.
+
+Also, 3 ranking algorithms are already implemented: Power-Method based PageRank, Power-Method based HITS, and InDegree.
+
+
+## installation
+
+In order to run this project a *c++ compiler* and *make* are required.
 
 ## Usage
 
@@ -20,12 +37,18 @@ make exec   # To run the compiled project.
 make clean  # To clean previous compiled versions of the project.
 ```
 
-# Contributing
 
-This project offers a basic set of tools to build and test ranking algorithms in the easisets and most efficient way possible, along with 3 algorithms already
-implemented and tested, i.e., Power-Method based PageRank, Power-Method based HITS, and InDegree.
+## Contributing
 
-# License
+Can be easily expanded, and offers also a multithreading library for an easier handling of thread pools. 
+The implemented barrier might need some further tweaks in order to be used inside of ranking algorithms (in order to avoid any deadlock).
+
+```bash
+git clone https://github.com/jgurakuqi/ranker-comparator
+```
+
+
+## License
 
 MIT License
 
