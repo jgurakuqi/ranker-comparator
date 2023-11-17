@@ -4,7 +4,7 @@
 ## Table of Contents
 
 - [Description](#Description)
-- [Installation](#installation)
+- [Installation](#Installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
@@ -23,7 +23,7 @@ The goal of this project is to offer a basic set of tools to build and evaluate 
 Also, 3 ranking algorithms are already implemented: Power-Method based PageRank, Power-Method based HITS, and InDegree.
 
 
-## installation
+## Installation
 
 In order to run this project a *c++ compiler* and *make* are required.
 
