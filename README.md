@@ -3,14 +3,14 @@
 
 ## Table of Contents
 
-- [Requirements & Description](#Requirements & Description)
+- [Description](#Description)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
 
 
-## Requirements & Description
+## Description
 
 The goal of this project is to offer a basic set of tools to build and evaluate ranking algorithms. In order to achieve this we have implemented:
 
